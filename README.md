@@ -1,2 +1,2 @@
 # WAP
-WAP website for storing content created in Web Programming course
+WAP website for storing content created in Web Programming course.
