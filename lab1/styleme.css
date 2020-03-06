@@ -1,0 +1,57 @@
+body {
+    background: rgb(12, 146, 190);
+    font-family: 'Courier New', Courier, sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px #555555;
+}
+
+h2{ 
+    padding-top: 5vh;
+}
+
+p > strong{
+    font-weight: 800;
+    color: #85fa00;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+}   
+
+dl {
+    font-size: 80%;
+    text-decoration: unset;
+}
+
+em {
+    color:  #b9ff68;
+}
+
+table {
+    position: relative;
+}
+td,th{
+    padding-right: 5vw;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(32, 166, 210);
+}
+
+a {
+    color: rgb(252, 238, 47);
+    text-decoration: unset;
+}
+
+.name{
+	font-weight: bolder;
+	font-style : normal;
+    color: pink;
+}
+
+#tarlan {
+    color: yellow;
+}
+
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+	<title>Apply for a Capital One Card</title>
+</head>
+<body>
+	<div id="main">
+		<form action="completed.html" method="get">
+		<fieldset class="personal">
+			
+			<legend class="personal title">Personal Information</legend>
+			
+			<img src="https://applynow.capitalone.com/images/quicksilverone/QuicksilverOneCard_2017-04-12_sm.png" alt="credit-card-image" />
+			
+			<div class="first name">
+				<p>FIRST NAME</p>
+				<input type="text" name="fname" pattern="[A-Za-z]{1,15}" required />
+			</div>
+
+			<div class="middle name">
+				<p>MI</p>
+				<input class="middle-name" class="mi" type="text" name="mi" / pattern="[A-Za-z]{1}" />
+			</div>
+
+			<div class="last name">
+				<p>LAST NAME</p>
+				<input type="text" name="lname" pattern="[A-Za-z]{1,26}" required /> 
+			</div>
+
+			<div class="date">
+				<p>DATE OF BIRTH</p>
+				<input type="date" name="dob" placeholder="MM/DD/YY" pattern="(\d{2}\/){2}\d{4}" maxlength="10" required />
+			</div>
+
+			<div class="ssn">
+				<p>SOCIAL SECURITY NUMBER</p>
+				<input type="text" name="ssn" maxlength="11" placeholder="_ _ _-_ _-_ _ _ _" pattern="\d{3}-\d{2}-\d{4}" required />
+			</div>
+			
+			
+			<div class="citizen">
+				<p>ARE YOU A U.S. CITIZEN?</p>
+				<label class="yes"><input type="radio" name="citizen" required />YES</label>
+				<label class="no"><input type="radio" name="citizen" required />NO</label>
+			</div>
+
+		</fieldset>
+
+		<fieldset class="contact">
+			
+			<legend class="contact title">Contact Inforamtion</legend>
+			
+			<div class="address">
+				<p>RESIDENTIAL ADDRESS <span>(No PO Boxes or CMRA)</span></p>
+				<input type="text" name="address" pattern="^[A-Za-z0-9]+((\s?|-?)[A-Za-z0-9]+)*,\s?[A-Za-z]+(\s?[A-Za-z]+)*,\s?[A-Za-z]{2}\s\d{5}(-\d{4})?" placeholder="STREET, CITY, ST ZIP"required /> 
+			</div>
+			
+			<div class="suite">
+				<p>SUITE/APT.# <span>(if applicable)</span> </p>
+				<input type="text" name="suite" pattern="[A-Za-z0-9]*" />
+			</div>
+
+			<div class="email">
+				<p>EMAIL ADDRESS</p>
+				<input type="email" name="email" pattern="\w+@\w+.[A-Za-z]{2,6}"required />
+			</div>
+			
+			<div class="phone">
+				<p>PRIMARY PHONE NUMBER</p>
+				<input type="tel" name="phone" pattern="(\+[0-9]*\s?)?([0-9]{3}(-|\s)?){2}[0-9]{4}" required />
+			</div>
+
+		</fieldset>
+
+		<fieldset class="finance">
+			<legend class="finance title">Financial Inforamtion</legend>
+
+			<div class="select accounts">
+				<p>DO YOU HAVE ANY BANK ACCOUNTS?</p>
+				<select name="accounts" required>
+					<option>Checking and Savings</option>
+					<option>Checking only</option>
+					<option>Savings only</option>
+					<option>neither</option>
+				</select>
+			</div>
+
+			<div class="select status">
+				<p>EMPLOYMENT STATUS</p>
+				<select name="employment" required>
+					<option>Employed</option>
+					<option>Self-Employed</option>
+					<option>Retired</option>
+					<option>Student</option>
+					<option>Unemployed</option>
+					<option>Other</option>
+				</select>
+			</div>
+
+			<div class="income">
+				<p>TOTAL ANNUAL INCOME</p>
+				<input type="text" name="income" maxlength="6" pattern="\d+" required /> 
+			</div>
+			
+			<div class="rent">
+				<p>MONTHLY RENT/MORTGAGE</p>
+				<input type="text" name="rent" maxlength="6" pattern="\d+" required />
+			</div>
+			
+			<div class="checks">
+				<p> IF OFFERED, WOULD YOU BE INTERESTED IN BLANK CHECKS TO USE FOR CASH ADVANCES? <span>(Optional)</span></p>
+				<label><input type="radio" name="offer" />YES</label>
+				<label><input type="radio" name="offer" />NO</label>
+			</div>
+			
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Additional Information</legend>
+			<p>We need your agreement to receive by electronic means only communications regarding your application, including notice of our decision on your application and important account opening information regarding rates, fees and other costs related to the credit card for which you are applying. Please review the terms of our <a href="">Electronic Communications Disclosure.</a></p>
+
+			<label><input type="checkbox" name="agreement" required>I have reviewed and agree to the terms of the Electronic Communications Disclosure. I confirm that I have an active email address and the ability to access, view and print PDF files.</label>
+
+			<p> Some of our communications are available in both English and Spanish. Which language would you prefer for future communications? </p>
+
+			<div class="lang">
+				<label><input type="radio" name="lang" checked="checked">ENGLISH</label>
+				<label><input type="radio" name="lang">SPANISH</label>
+			</div>
+		</fieldset>
+
+		<input type="submit" name="continue" value="Continue" />
+		</form>
+	</div>
+
+	<div id="validator">
+		<a href="http://validator.w3.org/check/referer">
+            <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"/>
+            </a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
+	</div>
+</body>
+</html>

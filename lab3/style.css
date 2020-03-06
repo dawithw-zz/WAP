@@ -1,0 +1,57 @@
+* {
+	margin: 5px;
+	padding: 0;
+	font-size: 100%;
+}
+
+body {
+	background-color: #fafafa;
+}
+
+#main {
+	font-family: Optimist, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	width: 60em;
+	margin: auto;
+}
+
+input {
+	border-radius: 5%;
+	border-style: none;
+	border: grey solid 1px;
+}
+
+img {
+	height: 151px;
+	float: right;
+}
+
+.title {
+	text-align: center;
+	font-size: 20px;
+	color: #007198;
+}
+
+span {
+	color: grey;
+	font-size: 12px;
+}
+
+.email {
+	clear: left;
+}
+
+#validator img{
+	height: unset;
+	width: unset;
+}
+
+#validator {
+	text-align: center;
+}
+
+#submitted {
+	text-align: center;
+	font-size: 5vw;
+}

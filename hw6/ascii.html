@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link href="ascii.css" type="text/css" rel="stylesheet" />
+	<script src="ascii.js" ></script>
+	<script src="animations.js"></script>
+	<title>ASCIImation</title>
+</head>
+<body>
+	<h1 id="heading">ASCIImation</h1>
+
+	<textarea id="textbox" rows="20" cols="80"></textarea>
+	
+	<fieldset id="play-control">
+		<legend>Play Controls</legend>
+		<input type="button" name="start" id="start" value="Start" />
+		<input type="button" name="stop" id="stop" value="Stop" />
+	</fieldset>
+
+	<fieldset>
+		<legend>Animation</legend>
+		<select id="animation-list">
+			<option selected>Blank</option>
+			<option>Exercise</option>
+			<option>Juggler</option>
+			<option>Bike</option>
+			<option>Dive</option>
+			<option>Custom</option>
+		</select>
+	</fieldset>
+
+	<fieldset>
+		<legend>Size</legend>
+		<select id="size">
+			<option>Tiny</option>
+			<option >Small</option>
+			<option selected>Medium</option>
+			<option>Large</option>
+			<option>Extra Large</option>
+			<option>XXL</option>
+		</select>
+	</fieldset>
+
+	<fieldset>
+		<legend>Speed</legend>
+		<label><input type="checkbox" name="checkbox" id="checkbox" />Turbo</label>
+	</fieldset>
+
+	<div id="validator">
+		<a href="http://validator.w3.org/check/referer">
+        <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"/>
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+	padding: 5px;
+	margin: 5px;
+	margin: auto;
+}
+
+html {
+    height: 100%;
+    border-color: red;
+}
+body {
+	text-align: center;
+	font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    background: lightskyblue;
+    height: 100%;
+}
+
+h1 {
+	color: white;
+    font-weight: bolder;
+    font-family: ;
+	text-shadow: 1px 1px 3px black;
+}
+
+img[alt="Dawit Picture"] {
+    width: 200px;
+    height: 200px;
+	box-shadow: 2px 2px 10px;
+}
+
+#links a {
+    z-index: 10;
+	box-shadow: 2px 4px 100px 1px lightsteelblue;
+	color: white;
+    background-color: deepskyblue;
+	text-decoration: none;
+	display: block;
+	border-radius: 1%;
+	margin-top: 1%;
+	width: 30%;
+}
+
+#links a:hover {
+    background: dodgerblue;
+}
+
+#validator {
+	padding-top: 5%;
+}
+#validator a {
+	opacity: 0.5;
+	display: inline;
+	border: none;
+	box-shadow: none;
+	text-shadow: none;
+}
